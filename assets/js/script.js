@@ -64,8 +64,8 @@ document.addEventListener("DOMContentLoaded", function ()
                     <strong>${film.text}</strong> | ${film.genero} | (${film.ano})
                 </span>
                 <div>
-                    <button class="edit"><img class="edit" src="assets/img/editar.png"></button>
-                    <button class="delete"><img class="delete" src="assets/img/excluir.png"></button>
+                    <button class="edit"><img class="edit" src="../img/editar.png"></button>
+                    <button class="delete"><img class="delete" src="../img/excluir.png"></button>
                 </div>
             `;
 
