@@ -1,0 +1,83 @@
+html, body 
+{
+    height: 100%;
+    width: 100%;
+}
+
+body 
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* DIVISOES */
+#left 
+{
+    background-color: #000000;
+    color: #ffffff;
+    height: 100%;
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#right 
+{
+    height: 100%;
+    width: 60%;
+}
+
+
+
+/* COMPONENTES DIV ESQUERDA */
+#logo-landingPage
+{
+    width: 300px;
+    height: 300px;
+}
+
+h4
+{
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.button 
+{
+    background-color: #a13825;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover 
+{
+    background-color: #a13825;
+    box-shadow: 0 0 20px #a13825;
+    transform: scale(1.05);
+}
+
+
+
+/* COMPONENTES DIV DIREITA */
+#img-landingPage
+{
+    height: 100%;
+    width: 100%;
+}

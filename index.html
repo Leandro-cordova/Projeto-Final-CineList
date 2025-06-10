@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineList | YourList</title>
+    <link rel="stylesheet" href="assets/css/styleIndex.css">
+    <link rel="icon" href="assets/img/logo.png" type="image/png">
+</head>
+
+<body>
+    <nav>
+        <h1>CineList</h1>
+    </nav>
+
+    <main>
+        <div id="form">
+            <section class="input">
+                <input type="text" id="title-input" placeholder="Título do filme">
+            </section>
+
+            <section class="input">
+                <input type="text" id="genero-input" placeholder="Gênero do filme">
+            </section>
+
+            <section class="input">
+                <input type="text" id="ano-input" placeholder="Ano de estreia">
+                <button id="add-film">Adicionar</button>
+            </section>
+
+            <section class="filters">
+                <select id="genre-filter">
+                    <option value="all" selected>Todos os Gêneros</option>
+                    <option value="Ação">Ação</option>
+                    <option value="Esporte">Esporte</option>
+                    <option value="Automobilismo">Automobilismo</option>
+                    <option value="Suspense">Suspense</option>
+                    <option value="Policial">Policial</option>
+                    <option value="Guerra">Guerra</option>
+                    <option value="Comédia">Comédia</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Terror">Terror</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Ficção Científica">Ficção Científica</option>
+                    <option value="Animação">Animação</option>
+                    <option value="Fantasia">Fantasia</option>
+                    <option value="Documentário">Documentário</option>
+                    <option value="Biografia">Biografia</option>
+                </select>
+
+                <p id="film-count">0 filmes cadastrados</p>
+            </section>
+
+            <section>
+                <img id="imgNeom" src="assets/img/imgDecoration.png" alt="">
+            </section>
+        </div>
+
+        <div id="list">
+            <ul id="film-list"></ul>
+
+            <p id="no-films-message">Sem filmes deste gênero.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p id="msg-footer">Por: Leandro Cordova | SI 1° fase | DevWeb</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

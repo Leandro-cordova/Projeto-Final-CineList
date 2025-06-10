@@ -1,0 +1,219 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #070707;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+nav 
+{
+    padding: 2px 100px;
+    background-color: #0f0f0f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 
+{
+    letter-spacing: 2px;
+    font-size: 35px;
+    color: #d82c0e;
+    text-shadow: 0 0 2px #a13825, 0 0 6px #a13825;
+}
+
+
+
+/* LAYOUT PRINCIPAL */
+main 
+{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/* COMPONENTES DIV ESQUERDA*/
+#form 
+{
+    width: 40%;
+    padding: 20px 50px;
+}
+
+.input 
+{
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+input, select 
+{
+    flex: 1;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #a13825;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.filters
+{
+    display: flex;
+    justify-content: center;
+    padding: 0px 150px;
+    gap: 30px;
+}
+
+select option:checked 
+{
+    background-color: #a13825;
+    
+}
+
+#add-film
+{
+    padding: 10px;
+    cursor: pointer;
+    background-color: #a13825;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+#add-film:hover
+{
+    background-color: #a13825;
+    box-shadow: 0 0 10px #a13825;
+    transform: scale(1.05);
+}
+
+#imgNeom
+{
+    height: 400px;
+    width: 400px;
+    filter: drop-shadow(0px 0px 10px #e32807);
+}
+
+
+
+
+
+
+
+
+
+
+/* COMPONENTES DIV DIREITA */
+#list 
+{
+    width: 60%;
+    padding: 20px 50px;
+}
+
+ul 
+{
+    list-style: none;
+    padding: 0;
+}
+
+li 
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border-left: 5px solid #a13825;
+}
+
+/* SCROLL PERSONALIZADO */
+#film-list 
+{
+    max-height: 670px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 5px;
+}
+
+#film-list::-webkit-scrollbar 
+{
+    width: 6px;
+}
+
+
+
+/* BOTOES DA LISTA */
+.edit 
+{
+    background-color: #f0ffff;
+    display: inline-flex;          
+    justify-content: center;       
+    align-items: center;           
+    width: 50px;
+    height: 40px;
+    padding: 3px 6px;
+    font-size: 10px;
+    margin: 0px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.delete
+{
+    background-color: #a13825;
+    display: inline-flex;    
+    justify-content: center;     
+    align-items: center;           
+    width: 50px;
+    height: 40px;
+    padding: 3px 6px;
+    font-size: 10px;
+    margin: 0px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.edit img, .delete img 
+{
+    width: 16px;                 
+    height: 16px;
+}
+
+
+/* MENSAGENS DE SEM FILMES */
+#no-films-message 
+{
+    color: #808080;
+    display: none;
+}
+
+
+
+
+
+/* FOOTER */
+footer 
+{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+#msg-footer
+{
+    color: #808080;
+}
+
